@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugarcane Quality Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌾 Sugarcane Quality Analyzer</h1>
+
+    <form method="POST" class="form-box">
+        <label>Moisture (%)</label>
+        <input type="number" step="0.1" name="moisture" required>
+
+        <label>Brix (%)</label>
+        <input type="number" step="0.1" name="brix" required>
+
+        <label>Fiber (%)</label>
+        <input type="number" step="0.1" name="fiber" required>
+
+        <label>Node Length (cm)</label>
+        <input type="number" step="0.1" name="node_length" required>
+
+        <label>Weight (kg)</label>
+        <input type="number" step="0.1" name="weight" required>
+
+        <button type="submit">Calculate Quality</button>
+    </form>
+</div>
+
+</body>
+</html>
