@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌾 Quality Analysis Result</h1>
+
+    <div class="result-box">
+        <h2>Score: {{ score }}/100</h2>
+        <h3>Grade: {{ grade }}</h3>
+    </div>
+
+    <a href="/" class="back-btn">Check Another Sample</a>
+</div>
+
+</body>
+</html>
