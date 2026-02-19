@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugarcane Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='farmer.css') }}">
+
+</head>
+<body>
+    <h1 class="start">Hello Farmer</h1>
+    <p class="underline">Farmer Is Backbone Of The Nation</p>
+    <h1>Sugarcane Guide</h1>
+    <ul>
+        <li><a href="https://Home.com">Home</a></li>
+        <li><a href="#Fertilizer">Fertilizer</a></li>
+        <li><a href="#Schedule">Schedule</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <h1>Complete Information About Fertilizers</h1>
+    <div class = "card">
+        <img src ="https://infinitygalaxy.org/wp-content/uploads/2023/06/What-is-urea-nitrogen-46-scaled.jpg"  alt  = "urea"/>
+        <div class ="desc">
+            <h3>Urea</h3>
+            <p>It provides Nitrogen for last leaf growth.
+                Urea should be applied in split does to avoid Nitrogen
+                loss and get better results.
+            </p>
+        </div>
+
+    </div>
+    <div class = "card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/11/358146502/TS/NR/QU/127908460/urea-dap-500x500.jpg" alt="DAP"/>
+        <div class ="desc">
+            <h3>DAP</h3>
+            <p>It help in strong root development and early plant growth.
+                DAP usually applied at the time of planting to support healthy 
+                sugarcane growth.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XkVgRF97kvWu6ngUJy7tL_AcT-BTHOdCEg&s" alt="MOP">
+        <div class="desc">
+            <h3>MOP</h3>
+            <P>It improves sugar content, strengthens plant
+                stems, and increases disease resistance.
+                MOP helps the crop tolerate drought and improves
+                overall yield quality.
+            </P>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/EE/XV/MY-26063452/organic-soil-compost.jpg" alt="Organic Compost">
+        <div class="desc">
+            <h3>Organic Compost</h3>
+            <p>Organic Compost is a natural fertilizer made from
+                decomposed plant and animal waste.it improves soil 
+                fertility,increases water holding capacity,and enhances
+                Soil structure.Compost supports healthy sugarcane growth
+                by providing nutrients slowly and naturally.
+            </p>
+        </div>
+    </div>
+    <section id="schedule" class="section">
+        <h2>Fertilizer Schedule</h2>
+        <table>
+            <tr>
+                <th>stage</th>
+                <th>Fertilizer</th>
+                <th>Quantity Acres</th>
+            </tr>
+            <tr>
+                <td>Planting</td>
+                <td>DAP</td>
+                <td>100 kg</td>
+            </tr>
+            <tr>
+                <td>30 Days</td>
+                <td>Urea</td>
+                <td>50 kg</td>
+            </tr>
+            <tr>
+                <td>60 days</td>
+                <td>Urea + MOP</td>
+                <td>50 kg + 25 kg</td>
+            </tr>
+        </table>
+    </section>
+    <section id="calculator" class="section">
+        <h2>Fertilizer calculator</h2>
+        <input type="number" id="acre"
+        placeholder="Enter Acres">
+        <button onclick="calculator()">Calculate Urea Needed</button>
+        <p id="result"></p>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact us</h2>
+        <p>Email: info@sugarcaneguide.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+</body>
